@@ -1,0 +1,165 @@
+/* fonts
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+:root {
+    --color1: rgb(194, 159, 166);
+    --color2: rgb(202, 198, 192);
+    --color3: rgb(232, 253, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vh;
+    color: var(--color1);
+}
+
+#subtitle {
+    font-size: 4vh;
+    font-style: italic;
+
+
+}
+
+@media (max-width: 530px) {
+    #subtitle {
+        word-spacing: 30000px;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 6vh;
+    color: var(--color2);
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+nav {
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color: var(--color2);
+    text-align: right;
+    z-index: 1;
+}
+
+nav ls {
+    padding: 2vw;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 10vh;
+    margin: 0px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@media (max-width: 530px) {
+    nav ul {
+        justify-content: center;
+    }
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color3);
+}
+
+/* projects section */
+
+#projects {
+    min-height: 100vh;
+    background-color: var(--color1);
+
+}
+
+#project-heading {
+    color: rgb(60, 83, 107);
+    padding-bottom: 3rem;
+    ;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-items: center;
+
+}
+
+.project-tile {
+    background-color: var(--color2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40vw;
+    min-width: 390px;
+    height: 40vw;
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    margin: 2vw;
+    position: relative;
+
+
+}
+
+img {
+    display: block;
+    width: 75%;
+    max-height: 75%;
+    margin: auto;
+
+}
+
+.project-title {
+    color: var(--color3);
+    font-size: 25px;
+    margin: 2vw;
+}
+
+/* contact section */
+
+#contact-section {
+    min-height: 33vh;
+    background-color: var(--color2);
+}
+
+#contact-title {
+    color: var(--color3);
+}
