@@ -125,10 +125,10 @@ nav ul a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 40vw;
-    min-width: 390px;
+    min-width: 320px;
     max-width: fit-content;
     height: 40vw;
-    min-height: 390px;
+    min-height: 320px;
     max-height: 550px;
     display: flex;
     align-items: center;
