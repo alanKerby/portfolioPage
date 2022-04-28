@@ -53,12 +53,17 @@ h2 {
 }
 
 nav {
-    height: 7vh;
-    position: sticky;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
     top: 0;
     background-color: hwb(0 86% 1%);
     text-align: right;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
 }
 
 nav ls {
@@ -66,12 +71,8 @@ nav ls {
 }
 
 nav ul {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 7vh;
-    margin: 0px;
     font-family: 'Plus Jakarta Sans', sans-serif;
+
 }
 
 @media (max-width: 530px) {
