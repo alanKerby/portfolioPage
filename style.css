@@ -18,6 +18,7 @@ h1 {
     color: black;
     padding-top: 20vh;
     padding-bottom: 2vh;
+    margin-top: 7vh;
 }
 
 #subtitle {
@@ -63,16 +64,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: end;
-
 }
 
 nav ls {
     padding: 1vw;
+
 }
 
 nav ul {
     font-family: 'Plus Jakarta Sans', sans-serif;
-
 }
 
 @media (max-width: 530px) {
@@ -142,6 +142,7 @@ img {
     width: 75%;
     max-height: 75%;
     margin: auto;
+
 }
 
 .project-title {
@@ -187,4 +188,8 @@ img {
     padding: 1vw 2vw;
     font-family: 'Roboto Mono', monospace;
     color: var(--color1)
+}
+
+.fadein {
+    opacity: 0;
 }
