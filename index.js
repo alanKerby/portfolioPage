@@ -1,15 +1,3 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.opacity = "1";
-    } else {
-        // document.getElementById("navbar").style.top = "-10vh";
-        document.getElementById("navbar").style.opacity = "0";
-    }
-    prevScrollpos = currentScrollPos;
-}
-
 $(document).ready(function () {
     $(window).scroll(function () {
         $('.fadein').each(function (i) {
@@ -20,4 +8,16 @@ $(document).ready(function () {
             }
         });
     });
+
+    var lastScrollTop = 0;
+    $(window).scroll(function (event) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+            $("nav").fadeOut();
+        } else {
+            $("nav").fadeIn();
+        }
+        lastScrollTop = st;
+    });
 });
+

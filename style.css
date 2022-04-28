@@ -193,3 +193,8 @@ img {
 .fadein {
     opacity: 0;
 }
+
+.navfadein {
+    opacity: 1;
+    transition: opacity 2s linear;
+}
