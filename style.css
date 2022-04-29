@@ -18,7 +18,7 @@ h1 {
     color: black;
     padding-top: 20vh;
     padding-bottom: 2vh;
-    margin-top: 7vh;
+    margin-top: 9vh;
 }
 
 #subtitle {
@@ -54,16 +54,19 @@ h2 {
 }
 
 nav {
-    height: 10vh;
+    height: 13vh;
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: hwb(0 86% 1%);
+    background-image: linear-gradient(rgb(151, 151, 151), rgb(255, 255, 255, 0));
     text-align: right;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: end;
+    border-bottom-color: var(--color1);
+    border-width: 0 0 0.1vh 0;
+    border-style: solid;
 }
 
 nav ls {
@@ -87,9 +90,13 @@ nav ul {
 
 nav ul a {
     text-decoration: none;
-    color: grey;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 20px;
+}
+
+#navTitle {
+    padding-right: 1vw;
 }
 
 #welcome-section {
@@ -192,9 +199,4 @@ img {
 
 .fadein {
     opacity: 0;
-}
-
-.navfadein {
-    opacity: 1;
-    transition: opacity 2s linear;
 }
