@@ -14,6 +14,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/2f6a226ca8.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 
 <body>
@@ -44,58 +45,99 @@
     <div id="pink"></div>
     <section id="projects">
         <h2 class="fadein" id="project-heading">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-tile fadein">
+        <div class="fadein project">
+            <div class="image">
                 <a id="profile-link" href="https://github.com/alanKerby/spring-boot-angular-ecommerce" target="_blank">
                     <img src="images/golden-shoe.png">
-                    <div class="project-title">
-                        <h3>
-                            Golden Shoe (Spring Boot/Angular)
-                        </h3>
-                    </div>
                 </a>
             </div>
-            <div class="project-tile fadein">
+            <div class="copy">
+                <h3 class="project-title">
+                    Golden Shoe
+                </h3>
+                <p>The project was to create a demo webapp for a pitch to a prospective client. A single page Angular
+                    frontend was created with Bootstrap and custom CSS. The backend RESTful API was created with Java
+                    Spring Boot with a PostGresSQL database and full testing coverage. </p>
+                <br>
+                <span style="color: rgb(70, 0, 128)" class="iconify" data-icon="akar-icons:bootstrap-fill"></span>
+                <span class="iconify" data-icon="logos:angular-icon"></span>
+                <span style="color:green" class="iconify" data-icon="bxl:spring-boot"></span>
+            </div>
+
+        </div>
+        <div id="shortLine"></div>
+        <div class="fadein project">
+            <div class="image">
                 <a id="profile-link" href="https://pubmed.ncbi.nlm.nih.gov/35220183/" target="_blank">
                     <img src="images/placenta.png">
-                    <div class="project-title">
-                        <h3>
-                            Placenta Image Analysis (Groovy)
-                        </h3>
-                    </div>
                 </a>
             </div>
-            <div class="project-tile fadein">
+            <div class="copy">
+                <h3 class="project-title">
+                    Placenta Image Analysis
+                </h3>
+                <p>One challenge in image analysis is variation in staining intensity caused by batch variation. A data
+                    aquisition pipeline that utilises a simple machine learning appoach was created using Groovy
+                    scripting. This appraoch dynamically
+                    adjusts the image analysis parameters resulting in compensation for batch variation in staining
+                    intenity, and therefore enhancing the accuracy of the output data</p>
+                <span id="groovy" class="iconify" data-icon="simple-icons:apachegroovy"></span>
+            </div>
+        </div>
+        <div id="shortLine"></div>
+        <div class="fadein project">
+            <div class="image">
                 <a id="profile-link" href="https://case-converter-web.herokuapp.com/" target="_blank">
                     <img src="images/caseConverter.png">
-                    <div class="project-title">
-                        <h3>
-                            Case Converter (HTML/CSS/JS)
-                        </h3>
-                    </div>
                 </a>
             </div>
-            <div class="project-tile fadein">
+            <div class="copy">
+                <h3 class="project-title">
+                    Case Converter
+                </h3>
+                <p>The project was to create a webpage with HTML/CSS/JS that can convert text to lowercase, uppercase,
+                    "proper-case" and
+                    "sentence-case" and allow download of the result.</p>
+                <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
+                <span class="iconify" data-icon="vscode-icons:file-type-css"></span>
+                <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span>
+            </div>
+        </div>
+        <div id="shortLine"></div>
+        <div class="fadein project">
+            <div class="image">
                 <a id="profile-link"
                     href="https://github.com/alanKerby/loan-calculator/blob/master/Loan%20Calculator/task/creditcalc/creditcalc.py"
                     target="_blank">
                     <img src="images/python-loan-calculator.png">
-                    <div class="project-title">
-                        <h3>
-                            Loan Calculator (Python)
-                        </h3>
-                    </div>
                 </a>
             </div>
-            <div class="project-tile fadein">
+            <div class="copy">
+                <h3 class="project-title">
+                    Loan Calculator
+                </h3>
+                <p>The project was to create a loan calculator using Python for annuity or differentiated payment loans.
+                </p>
+                <br>
+                <span class="iconify" data-icon="logos:python"></span>
+            </div>
+        </div>
+        <div id="shortLine"></div>
+        <div class="fadein project">
+            <div class="image">
                 <a id="profile-link" href="https://github.com/alanKerby/battleships-game" target="_blank">
                     <img src="images/battleships.png">
-                    <div class="project-title">
-                        <h3>
-                            Battleships (Java)
-                        </h3>
-                    </div>
                 </a>
+            </div>
+            <div class="copy">
+                <h3 class="project-title">
+                    Battleships
+                </h3>
+                <p>The project was to create a command line interface (CLI) version of the classic game Battleships, to
+                    be played by two people. This project demonstrates skill in object orientated programing,
+                    algorithms, 2-dimensional matrices, handling user input, and game design.</p>
+                <br>
+                <span class="iconify" data-icon="logos:java"></span>
             </div>
         </div>
     </section>

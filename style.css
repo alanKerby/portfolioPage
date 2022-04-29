@@ -30,7 +30,7 @@ h1 {
 p {
     font-family: 'Plus Jakarta Sans', sans-serif;
     max-width: 600px;
-    font-size: 2vh;
+    font-size: 14pt;
     text-align: justify;
 }
 
@@ -53,6 +53,7 @@ h2 {
     padding-bottom: 5vh;
 }
 
+
 nav {
     height: 13vh;
     position: fixed;
@@ -65,7 +66,7 @@ nav {
     align-items: center;
     justify-content: end;
     border-bottom-color: var(--color1);
-    border-width: 0 0 0.1vh 0;
+    border-width: 0 0 0.01vh 0;
     border-style: solid;
 }
 
@@ -104,32 +105,56 @@ nav ul a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0vw 5vw;
+    margin: 5vh 5vw;
 }
 
 #pink {
     background-color: var(--color1);
-    height: 1vh;
-    width: 25vw;
+    height: 0.11vh;
+    width: 50vw;
+    margin: auto;
+}
+
+#shortLine {
+    background-color: var(--color1);
+    height: 0.11vh;
+    width: 30vw;
     margin: auto;
 }
 
 /* projects section */
 #project-heading {
     color: grey;
-    padding: 3rem;
     font-family: 'Roboto Mono', monospace;
+    padding-top: 3vh;
+
 }
 
-.projects-grid {
+/* .projects-grid {
     max-width: 1000px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-items: center;
+} */
+
+.project {
+    display: flex;
+    flex-direction: row;
+    max-width: 1500px;
+    width: 80vw;
+    margin: 3vh auto;
+    justify-content: center;
 }
 
-.project-tile {
+.copy {
+    margin: 3vw;
+    width: 50vw;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* .project-tile {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 40vw;
@@ -142,23 +167,44 @@ nav ul a {
     align-items: center;
     margin: 2vw;
     position: relative;
-}
+} */
 
 img {
-    display: block;
-    width: 75%;
-    max-height: 75%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
+.image {
+    width: 50vw;
+    max-width: 500px;
+    margin: 3vw;
+
+}
+
+@media (max-width: 1000px) {
+    .project {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .copy {
+        width: 80vw;
+    }
+
+    .image {
+        width: 80vw;
+    }
 }
 
 .project-title {
     color: grey;
     font-weight: 500;
-    font-size: 20px;
-    margin: 2vw;
+    font-size: 35px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     text-align: center;
+    margin-bottom: 3vh;
 }
 
 /* contact section */
@@ -199,4 +245,13 @@ img {
 
 .fadein {
     opacity: 0;
+}
+
+#groovy {
+    color: blue;
+    font-size: 70pt;
+}
+
+.iconify {
+    font-size: 30pt;
 }
