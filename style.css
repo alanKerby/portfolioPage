@@ -248,10 +248,11 @@ img {
 }
 
 #groovy {
-    color: blue;
+    color: grey;
     font-size: 70pt;
 }
 
 .iconify {
     font-size: 30pt;
+    color: grey;
 }
