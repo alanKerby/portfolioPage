@@ -19,37 +19,41 @@
 
 <body>
     <nav id="navbar">
-        <ul>
-            <ls><a href="#welcome-section">About</a></ls>
-            <ls><a href="#projects">Projects</a></ls>
-            <ls><a href="#contact-section">Contact</a></ls>
-            <ls><a target="_blank"
-                    href="https://docs.google.com/document/d/12L6gfc6EQnav2vLwnAuEIJxLb8SnGXcy/export?format=pdf">CV</a>
-            </ls>
-        </ul>
+        <div id="list">
+            <ul>
+                <ls><a href="#welcome-section">About</a></ls>
+                <ls><a href="#projects">Projects</a></ls>
+                <ls><a href="#contact-section">Contact</a></ls>
+                <ls><a target="_blank"
+                        href="https://docs.google.com/document/d/12L6gfc6EQnav2vLwnAuEIJxLb8SnGXcy/export?format=pdf">CV</a>
+                </ls>
+            </ul>
+        </div>
     </nav>
-    <section id="welcome-section">
-        <h1>Alan Kerby</h1>
-        <h2 id="subtitle">Programmer & Biologist</h2>
-        <p>I have a background in biomedical research involving development, testing, analysis, interpretation of data,
-            and communication of findings.
-            <br><br>
-            I developed an image analysis approach used for digital pathology which
-            helped me to understand the power of code to deliver elegant solutions, insightful analyses, and engaging
-            interfaces.
-            <br><br>
-            I would like to apply my experience and programming skills to career change to a
-            technology role.
-        </p>
-    </section>
-    <div id="pink"></div>
+    <div id="hero">
+        <section id="welcome-section">
+            <h1>Alan Kerby</h1>
+            <h2 id="subtitle">Programmer & Biologist</h2>
+            <p id="aboutText">I have a background in biomedical research involving development, testing, analysis,
+                interpretation of
+                data,
+                and communication of findings.
+                <br><br>
+                I developed an image analysis approach used for digital pathology which
+                helped me to understand the power of code to deliver elegant solutions, insightful analyses, and
+                engaging
+                interfaces.
+                <br><br>
+                I would like to apply my experience and programming skills to career change to a
+                technology role.
+            </p>
+        </section>
+    </div>
     <section id="projects">
         <h2 class="fadein" id="project-heading">Projects</h2>
         <div class="fadein project">
             <div class="image">
-                <a id="profile-link" href="https://github.com/alanKerby/spring-boot-angular-ecommerce" target="_blank">
-                    <img src="images/golden-shoe.png">
-                </a>
+                <img src="images/golden-shoe.png">
             </div>
             <div class="copy">
                 <h3 class="project-title">
@@ -63,15 +67,17 @@
                 <span class="iconify" data-icon="akar-icons:angular-fill"></span>
                 <span class="iconify" data-icon="bxl:spring-boot"></span>
                 <span class="iconify" data-icon="akar-icons:postgresql-fill"></span>
+                <br>
+                <a id="profile-link" href="https://github.com/alanKerby/spring-boot-angular-ecommerce" target="_blank">
+                    <button>View Code</button>
+                </a>
             </div>
 
         </div>
         <div id="shortLine"></div>
         <div class="fadein project">
             <div class="image">
-                <a id="profile-link" href="https://pubmed.ncbi.nlm.nih.gov/35220183/" target="_blank">
-                    <img src="images/placenta.png">
-                </a>
+                <img src="images/placenta.png">
             </div>
             <div class="copy">
                 <h3 class="project-title">
@@ -85,14 +91,20 @@
                     intensity.
                 </p>
                 <span id="groovy" class="iconify" data-icon="simple-icons:apachegroovy"></span>
+                <br>
+                <a id="profile-link" href="https://pubmed.ncbi.nlm.nih.gov/35220183/" target="_blank">
+                    <button>View Site</button>
+                </a>
+                <a id="profile-link" href="https://github.com/alanKerby/dynamic-qupath-scripts-cd31-sna"
+                    target="_blank">
+                    <button>View Code</button>
+                </a>
             </div>
         </div>
         <div id="shortLine"></div>
         <div class="fadein project">
             <div class="image">
-                <a id="profile-link" href="https://case-converter-web.herokuapp.com/" target="_blank">
-                    <img src="images/caseConverter.png">
-                </a>
+                <img src="images/caseConverter.png">
             </div>
             <div class="copy">
                 <h3 class="project-title">
@@ -101,19 +113,23 @@
                 <p>The project was to create a webpage with HTML/CSS/JS that can convert text to lowercase, uppercase,
                     "proper-case" and
                     "sentence-case" and allow download of the result.</p>
+                <br>
                 <span class="iconify" data-icon="akar-icons:html-fill"></span>
                 <span class="iconify" data-icon="akar-icons:css-fill"></span>
                 <span class="iconify" data-icon="akar-icons:javascript-fill"></span>
+                <br>
+                <a id="profile-link" href="https://case-converter-web.herokuapp.com/" target="_blank">
+                    <button>View Site</button>
+                </a>
+                <a id="profile-link" href="https://github.com/alanKerby/caseConverter" target="_blank">
+                    <button>View Code</button>
+                </a>
             </div>
         </div>
         <div id="shortLine"></div>
         <div class="fadein project">
             <div class="image">
-                <a id="profile-link"
-                    href="https://github.com/alanKerby/loan-calculator/blob/master/Loan%20Calculator/task/creditcalc/creditcalc.py"
-                    target="_blank">
-                    <img src="images/python-loan-calculator.png">
-                </a>
+                <img src="images/python-loan-calculator.png">
             </div>
             <div class="copy">
                 <h3 class="project-title">
@@ -123,14 +139,18 @@
                 </p>
                 <br>
                 <span class="iconify" data-icon="akar-icons:python-fill"></span>
+                <br>
+                <a id="profile-link"
+                    href="https://github.com/alanKerby/loan-calculator/blob/master/Loan%20Calculator/task/creditcalc/creditcalc.py"
+                    target="_blank">
+                    <button>View Code</button>
+                </a>
             </div>
         </div>
         <div id="shortLine"></div>
         <div class="fadein project">
             <div class="image">
-                <a id="profile-link" href="https://github.com/alanKerby/battleships-game" target="_blank">
-                    <img src="images/battleships.png">
-                </a>
+                <img src="images/battleships.png">
             </div>
             <div class="copy">
                 <h3 class="project-title">
@@ -141,26 +161,28 @@
                     algorithms, 2-dimensional matrices, handling user input, and game design.</p>
                 <br>
                 <span class="iconify" data-icon="cib:java"></span>
+                <br>
+                <a id="profile-link" href="https://github.com/alanKerby/battleships-game" target="_blank">
+                    <button>View Code</button>
+                </a>
             </div>
         </div>
-    </section>
-    <section class="fadein" id="contact-section">
-        <div id="pink"></div>
-        <h2 id="contact-title">Contact</h2>
-        <div class="contact-links">
-            <a id="profile-link" href="https://github.com/alanKerby" target="_blank" class="btn contact-details"><i
-                    class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/alan-kerby-359549b5/" target="_blank" class="btn contact-details"> <i
-                    class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="https://www.researchgate.net/profile/Alan-Kerby" target="_blank" class="btn contact-details"> <i
-                    class="fa-brands fa-researchgate"></i> ResearchGate</a>
-            <a href="mailto:alankerby@gmail.com" target="_blank" class="btn contact-details"><i class="fas fa-at"></i>
-                Email</a>
-        </div>
-    </section>
-    </section>
-
-    <script src="index.js"></script>
+        <section class="fadein" id="contact-section">
+            <div id="pink"></div>
+            <h2 id="contact-title">Contact</h2>
+            <div class="contact-links">
+                <a id="profile-link" href="https://github.com/alanKerby" target="_blank" class="btn contact-details"><i
+                        class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/alan-kerby-359549b5/" target="_blank" class="btn contact-details">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.researchgate.net/profile/Alan-Kerby" target="_blank" class="btn contact-details">
+                    <i class="fa-brands fa-researchgate"></i> ResearchGate</a>
+                <a href="mailto:alankerby@gmail.com" target="_blank" class="btn contact-details"><i
+                        class="fas fa-at"></i>
+                    Email</a>
+            </div>
+        </section>
+        <script src="index.js"></script>
 </body>
 
 </html>
