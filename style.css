@@ -243,9 +243,14 @@ img {
 }
 
 .contact-links a {
-    padding: 1vw 2vw;
+    padding: 1vh 0;
+    margin-right: 2vw;
     font-family: 'Roboto Mono', monospace;
     color: var(--color1)
+}
+
+.contact-links i {
+    color: var(--color1);
 }
 
 .fadein {
@@ -311,4 +316,12 @@ button:active {
 .underline:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.underline-color {
+    color: var(--color1);
+}
+
+.underline-color:after {
+    background-color: var(--color1);
 }
