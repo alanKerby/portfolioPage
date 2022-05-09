@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Playfair+Display&family=Plus+Jakarta+Sans:ital@0;1&family=Roboto+Mono&display=swap');
+
 :root {
     --color1: rgb(251, 102, 102);
 }
@@ -5,66 +7,35 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Playfair Display';
 }
 
 a {
     text-decoration: none;
 }
 
-h1 {
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 10vh;
-    color: white;
-    padding-top: 20vh;
-    padding-bottom: 2vh;
-    margin-top: 9vh;
+.fadein {
+    opacity: 0;
 }
-
-#subtitle {
-    font-size: 4vh;
-    font-style: italic;
-    color: var(--color1);
-}
-
-
 
 p {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Playfair Display';
     max-width: 600px;
     font-size: 14pt;
     text-align: justify;
-
-}
-
-@media (max-width: 530px) {
-    #subtitle {
-        word-spacing: 30000px;
-    }
-
-    h1 {
-        padding-top: 5vh;
-    }
 }
 
 h2 {
     text-align: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Playfair Display';
     font-size: 6vh;
-    color: var(--color2);
     font-weight: 600;
     padding-bottom: 5vh;
+    text-decoration: underline var(--color1) 3px;
 }
 
-#hero {
-    background-image: url("images/5m06 rage bw odd morphology.png");
-    height: 100%;
-    background-size: cover;
-    min-height: 100vh;
-    max-width: 1500px;
-    margin: auto;
-}
-
+/*********************************NAV BAR*************************************** */
 nav {
     height: 13vh;
     position: fixed;
@@ -85,7 +56,7 @@ nav ls {
 }
 
 nav ul {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Playfair Display';
     margin-right: 5vw;
 }
 
@@ -118,6 +89,67 @@ nav ul a {
     padding-right: 1vw;
 }
 
+/* animated underline */
+.underline {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+
+.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* *****************************WELCOME SECTION********************************* */
+#hero {
+    background-image: url("images/5m06 rage bw odd morphology.png");
+    height: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 1500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 10vh;
+    color: white;
+    padding-top: 20vh;
+    padding-bottom: 2vh;
+    margin-top: 9vh;
+}
+
+#subtitle {
+    font-size: 4vh;
+    font-style: italic;
+    color: var(--color1);
+}
+
+@media (max-width: 530px) {
+    #subtitle {
+        word-spacing: 30000px;
+    }
+
+    h1 {
+        padding-top: 5vh;
+    }
+}
+
 #welcome-section {
     min-height: 90vh;
     display: flex;
@@ -130,28 +162,13 @@ nav ul a {
     padding: 0 7vw 7vh;
 }
 
-#pink {
-    background-color: var(--color1);
-    height: 0.11vh;
-    width: 50vw;
-    margin: auto;
-}
 
-#shortLine {
-    background-color: var(--color1);
-    height: 0.11vh;
-    width: 30vw;
-    margin: auto;
-}
 
-/* projects section */
+/*******************************PROJECTS SECTION **************************************/
 
 #project-heading {
-    color: grey;
-    font-family: 'Roboto Mono', monospace;
     padding-top: 10vh;
     font-size: 7vh;
-
 }
 
 .project {
@@ -200,61 +217,17 @@ img {
 }
 
 .project-title {
-    color: grey;
     font-weight: 500;
     font-size: 35px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     text-align: center;
     margin-bottom: 3vh;
 }
 
-/* contact section */
-#contact-section #pink {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
-
-#contact-section {
-    min-height: 33vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#shortLine {
+    background-color: var(--color1);
+    height: 0.11vh;
+    width: 30vw;
     margin: auto;
-    max-width: 1500px;
-
-
-    background-image: url("images/5m06invert5pcTrans.png");
-    background-size: cover;
-}
-
-#contact-title {
-    color: grey;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.contact-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 2.5vh;
-    justify-content: center;
-}
-
-.contact-links a {
-    padding: 1vh 0;
-    margin-right: 2vw;
-    font-family: 'Roboto Mono', monospace;
-    color: var(--color1)
-}
-
-.contact-links i {
-    color: var(--color1);
-}
-
-.fadein {
-    opacity: 0;
 }
 
 #groovy {
@@ -267,12 +240,16 @@ img {
     color: grey;
 }
 
+.icons {
+    padding: 3vh 0 1vh 0;
+}
+
+/* BUTTONS */
 button {
     color: grey;
     background-color: white;
     border: 2px solid grey;
     cursor: pointer;
-    font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     min-height: 60px;
     text-align: center;
@@ -293,29 +270,38 @@ button:active {
     transform: translateY(0);
 }
 
-/* animated underline */
-.underline {
-    display: inline-block;
-    position: relative;
-    color: #ffffff;
+/***********************************CONTACT SECTION*************************** */
+
+#contact-section {
+    min-height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 1500px;
+    background-image: url("images/5m06invert5pcTrans.png");
+    background-size: cover;
 }
 
-.underline:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: -5px;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 2.5vh;
+    justify-content: center;
+    max-width: 80%;
 }
 
-.underline:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.contact-links a {
+    padding: 1vh 0;
+    margin-right: 2vw;
+    color: var(--color1)
+}
+
+.contact-links i {
+    color: var(--color1);
 }
 
 .underline-color {
